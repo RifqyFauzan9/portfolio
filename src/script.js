@@ -24,4 +24,9 @@ humberger.addEventListener('click', function () {
 const changeColorButton = document.querySelector('#dark-toggle');
 changeColorButton.addEventListener('click', function () {
     alert('Maaf website ini hanya tersedia dark mode.');
-})
+});
+
+// oncopy
+document.oncopy = function () {
+    alert('hayo habis ngopy apa?');
+};
