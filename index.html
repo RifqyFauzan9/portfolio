@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Rifqy Fauzan</title>
+    <link rel="stylesheet" href="src/output.css">
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(22, 22, 40);">
+    <!-- header start -->
+    <header style="background-color: rgb(22, 22, 40);"
+        class="fixed text-white top-0 left-0 w-full z-50 flex items-center">
+        <div class="w-full ml-auto mr-auto pl-5 pr-3 md:px-24 py-[19px]">
+            <div class="relative flex justify-between items-center">
+                <a href="#home" class="text-emerald-300 text-xl font-bold">
+                    rifqyfauzan
+                </a>
+                <div class="flex items-center">
+                    <button id="humberger" name="humberger" type="button" class="absolute block right-4 lg:hidden">
+                        <span
+                            class="humberger-line origin-top-left relative left-1 transition duration-500 ease-in-out"></span>
+                        <span class="humberger-line transition duration-500 ease-in-out relative left-1"></span>
+                        <span
+                            class="humberger-line origin-bottom-left relative left-1 transition duration-500 ease-in-out"></span>
+                    </button>
+                    <nav id="nav-menu" style="box-shadow: none; background-color: rgb(22, 22, 40);"
+                        class="absolute py-2 border-emerald-300 lg:border-none border-4 md:py-1 right-1 w-full bg-emerald-300 top-[2.80rem]  rounded-xl shadow-lg hidden lg:block lg:static lg:max-w-full lg:bg-transparent lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base py-2 mx-5 flex group-hover:text-emerald-300 duration-200 ease-in-out ">Beranda</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base py-2 mx-6 flex group-hover:text-emerald-300 duration-200 ease-in-out ">Tentang
+                                    Saya</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portfolio"
+                                    class="text-base py-2 mx-6 flex group-hover:text-emerald-300 duration-200 ease-in-out ">Portfolio</a>
+                            </li>
+
+                            <li class="group">
+                                <a href="#blog"
+                                    class="text-base py-2 mx-6 flex group-hover:text-emerald-300 duration-200 ease-in-out ">Blog</a>
+                            </li>
+
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base py-2 mx-6 flex group-hover:text-emerald-300 duration-200 ease-in-out ">Contact</a>
+                            </li>
+
+                            <li class="group items-center md:mt-[.6rem] pb-3 pl-8">
+                                <div class="flex">
+                                    <span class="mr-2 text-sm text-slate-400 line-through">Light</span>
+                                    <input type="checkbox" class="hidden" id="dark-toggle">
+                                    <label for="dark-toggle">
+                                        <div
+                                            class="flex rounded-full h-5 w-9 bg-slate-400 mt-[.10rem] items-center p-1 cursor-pointer">
+                                            <div
+                                                class="toggle-circle ml-3 h-4 w-4 bg-gray-800 rounded-full transition duration-[250ms] ease-in-out">
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2 text-sm text-white">Dark</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- section home start -->
+    <section id="home" class="px-5 py-14 md:p-10 lg:p-24">
+        <div class="home-content flex flex-col md:flex-row items-center justify-center gap-10 md:gap-32 mt-10">
+            <div class="home-text">
+                <h3 class="text-emerald-200 font-semibold">Hallo semua 🐇, saya</h3>
+                <h1 class="text-white text-4xl font-bold">Rifqy Fauzan</h1>
+                <h2 class="text-white mb-2"><span class="text-slate-600">Lecturer &</span> Content creator</h2>
+                <p class="text-slate-600 font-semibold">Belajar web programming itu mudah dan menyenangkan bukan. <span
+                        class="text-white">bukan!</span></p>
+                <button type="button"
+                    class="rounded-full mt-5 bg-emerald-400 text-white py-2 px-5 font-semibold">Hubungi Saya</button>
+            </div>
+
+            <div class="home-img">
+                <img class="md:w-96 w-[17rem]" src="src/img/sandika ghalih.png" alt="me">
+            </div>
+        </div>
+    </section>
+    <!-- section home end -->
+
+    <!-- section about start -->
+    <section id="about" class="text-white px-[2rem] md:px-[2.5rem] lg:px-[7rem] py-28">
+        <div class="about-heading mb-5 md:mb-0">
+            <h1 class="text-emerald-500 font-bold text-2xl">Tentang Saya</h1>
+        </div>
+        <div class="about-content">
+            <div class="about-card mb-5 flex flex-col md:flex-row justify-between items-center text-white">
+                <div class="about-card-text md:w-[50%] mb-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed minima iste commodi totam fuga
+                        molestias beatae consectetur quasi veritatis. Illum accusamus blanditiis veniam dicta
+                        cupiditate!</p>
+                </div>
+                <div class="about-card-img">
+                    <img class="w-64" src="src/img/download (2).jpeg" alt="">
+                </div>
+            </div>
+
+            <div class="about-card flex flex-col md:flex-row-reverse justify-between items-center text-white">
+                <div class="about-card-text md:w-[50%] mb-5">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut suscipit debitis doloremque dolores,
+                        quo provident ullam. Commodi sed, debitis numquam eaque cupiditate distinctio maiores
+                        repudiandae?.</p>
+                </div>
+                <div class="about-card-img">
+                    <img class="w-64" src="src/img/✨🖤.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section about end -->
+
+    <!-- section portfolio start -->
+    <section id="portfolio" class="text-white py-24">
+        <div class="portfolio-content">
+            <div class="portfolio-text text-center m-auto mb-[5rem] md:w-[30rem]">
+                <h3 class="text-emerald-500 font-bold">Portfolio</h3>
+                <h1 class="text-4xl font-bold my-1">Project Terbaru</h1>
+                <p class="text-slate-600 text-justify w-[16rem] m-auto md:w-full">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ex eligendi et
+                    molestiae, tempora repudiandae iste ad voluptate laboriosam quaerat officia quibusdam!</p>
+            </div>
+
+            <div class="portfolio-card flex flex-col md:flex-row flex-wrap gap-10 justify-center items-center">
+                <div class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
+                    <div class="portfolio-card-img">
+                        <img class="w-[25rem] rounded-t-lg" src="src/img/Company-Profile-NB.png" alt="">
+                    </div>
+                    <div class="portfolio-card-text">
+                        <h1 class="font-bold my-3">Company Profile New Balance</h1>
+                        <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+                            accusantium?</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
+                    <div class="portfolio-card-img">
+                        <img class="w-[25rem] rounded-t-lg" src="src/img/-Portfolio.png" alt="">
+                    </div>
+                    <div class="portfolio-card-text">
+                        <h1 class="font-bold my-3">First portfolio website</h1>
+                        <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur, adipisicing elit. ,
+                            architecto.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
+                    <div class="portfolio-card-img">
+                        <img class="w-[25rem] rounded-t-lg" src="src/img/Al-Qur-an.png" alt="">
+                    </div>
+                    <div class="portfolio-card-text">
+                        <h1 class="font-bold my-3">Qur'an Website</h1>
+                        <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+                            nesciunt.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
+                    <div class="portfolio-card-img">
+                        <img class="w-[25rem] rounded-t-lg" src="src/img/Kopi-Kenangan.png" alt="">
+                    </div>
+                    <div class="portfolio-card-text">
+                        <h1 class="font-bold my-3">Company Profile Kopi Kenangan</h1>
+                        <p class="text-slate-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+                            nesciunt.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section portfolio end -->
+
+    <!-- section blog start -->
+    <section id="blog" class="text-white py-24">
+        <div class="blog-content">
+            <div class="blog-text text-center m-auto mb-[5rem] md:w-[30rem]">
+                <h3 class="text-emerald-500 font-bold">Blog</h3>
+                <h1 class="text-4xl font-bold my-1">Tulisan Terkini</h1>
+                <p class="text-slate-600 text-justify m-auto w-[16rem] md:w-full">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ex eligendi et
+                    molestiae, tempora repudiandae iste ad voluptate laboriosam quaerat officia quibusdam!</p>
+            </div>
+            <div class="blog-card flex flex-col flex-wrap md:flex-row justify-center gap-7 items-center">
+                <div class="blog-card-content cursor-pointer w-[80%] md:w-[38.1%] lg:w-[25%]">
+                    <div class="card-img">
+                        <img class="rounded-t-lg"
+                            src="src/img/Computer Programmer Job Description_ Templates for Hiring for Your Business.jpeg"
+                            alt="">
+                    </div>
+                    <div class="card-text bg-slate-600 rounded-lg rounded-t-none p-5">
+                        <h1 class="font-bold bg-transparent">Tips belajar programming</h1>
+                        <p class="text-slate-400 bg-transparent my-3">Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Provident, consequuntur!</p>
+                        <button type="button" onclick="alert('Maaf ini hanya pajangan.')" class="bg-emerald-400 py-1 font-semibold px-5 rounded-lg">Baca
+                            Sekarang</button>
+                    </div>
+                </div>
+
+                <div class="blog-card-content cursor-pointer w-[80%] md:w-[38.1%] lg:w-[25%]">
+                    <div class="card-img">
+                        <img class="rounded-t-lg"
+                            src="src/img/Computer Programmer Job Description_ Templates for Hiring for Your Business.jpeg"
+                            alt="">
+                    </div>
+                    <div class="card-text bg-slate-600 rounded-lg rounded-t-none p-5">
+                        <h1 class="font-bold bg-transparent">Tips belajar programming</h1>
+                        <p class="text-slate-400 bg-transparent my-3">Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Provident, consequuntur!</p>
+                        <button type="button" onclick="alert('Maaf ini hanya pajangan.')" class="bg-emerald-400 py-1 font-semibold px-5 rounded-lg">Baca
+                            Sekarang</button>
+                    </div>
+                </div>
+
+                <div class="blog-card-content cursor-pointer w-[80%] md:w-[80%] lg:w-[25%]">
+                    <div class="card-img">
+                        <img class="rounded-t-lg"
+                            src="src/img/Computer Programmer Job Description_ Templates for Hiring for Your Business.jpeg"
+                            alt="">
+                    </div>
+                    <div class="card-text bg-slate-600 rounded-lg rounded-t-none p-5">
+                        <h1 class="font-bold bg-transparent">Tips belajar programming</h1>
+                        <p class="text-slate-400 bg-transparent my-3">Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Provident, consequuntur!</p>
+                        <button type="button" onclick="alert('Maaf ini hanya pajangan.')" class="bg-emerald-400 py-1 font-semibold px-5 rounded-lg">Baca
+                            Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section blog end -->
+
+    <!-- section contact start -->
+    <section id="contact" class="text-white py-24">
+        <div class="content">
+            <div class="contact-text text-center m-auto mb-10 md:w-[30rem]">
+                <h3 class="text-emerald-500 font-bold">Contact</h3>
+                <h1 class="text-4xl font-bold my-1">Hubungi Kami</h1>
+                <p class="text-slate-600 text-justify m-auto w-[16rem] md:w-full">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, numquam!</p>
+            </div>
+            <div class="contact-content flex justify-center gap-5 items-center flex-col">
+                <div class="input">
+                    <label for="inputNama" class="text-emerald-300 font-semibold block">Nama</label>
+                    <input type="text" name="name" id="inputNama" class="bg-slate-300 p-2 w-64 md:w-[40rem] rounded-lg">
+                </div>
+
+                <div class="input">
+                    <label for="inputEmail" class="text-emerald-300 font-semibold block">Email</label>
+                    <input type="text" name="email" id="inputEmail" class="bg-slate-300 p-2 w-64 md:w-[40rem] rounded-lg">
+                </div>
+
+                <div class="input">
+                    <label for="inputPesan" class="text-emerald-300 font-semibold block">Pesan</label>
+                    <input type="text" name="message" id="inputPesan" class="bg-slate-300 w-64 h-[10rem] md:w-[40rem] rounded-lg">
+                </div>
+
+                <div class="submit-button">
+                    <input type="submit" name="submit" id="submitButton" class="font-semibold bg-emerald-400 md:w-[40rem] w-64 rounded-full p-2">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section contact end -->
+
+    <!-- back to top start -->
+    <a href="#home" class="fixed bottom-3 left-0 z-[9999] h-12 w-12 bg-emerald-400 rounded-xl rounded-s-none hidden"
+        id="to-top">
+        <span class="flex justify-center animate-bounce items-center mt-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24"
+                style="fill: rgb(255, 255, 255);transform: msFilter">
+                <path d="M11 8.414V18h2V8.414l4.293 4.293 1.414-1.414L12 4.586l-6.707 6.707 1.414 1.414z"></path>
+            </svg>
+        </span>
+    </a>
+    <!-- back to top end -->
+
+    <!-- js -->
+    <script src="src/script.js"></script>
+</body>
+
+</html>
