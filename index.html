@@ -7,11 +7,15 @@
     <title>Portfolio | Rifqy Fauzan</title>
     <link rel="stylesheet" href="src/output.css">
     <link rel="shortcut icon" href="src/img/favicon.avif" type="image/x-icon">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
         * {
             scroll-behavior: smooth;
         }
     </style>
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body style="background-color: rgb(22, 22, 40);">
@@ -83,19 +87,32 @@
 
     <!-- section home start -->
     <section id="home" class="px-5 py-14 md:p-10 lg:p-24">
-        <div class="home-content flex flex-col md:flex-row items-center justify-center gap-10 md:gap-32 mt-10">
-            <div class="home-text">
+        <div class="home-content flex flex-col items-center justify-center gap-5">
+            <div class="home-img">
+                <img class="md:w-[11rem] w-[17rem]" src="src/img/sandika ghalih.png" alt="me">
+            </div>
+            <div class="home-text text-center">
                 <h3 class="text-emerald-200 font-semibold">Hallo semua 🐇, saya</h3>
                 <h1 class="nama-satu text-white text-4xl font-bold">Rifqy Fauzan</h1>
-                <h2 class="text-white mb-2"><span class="text-slate-600">Lecturer &</span> Content creator</h2>
+                <h2 class="text-white mb-1"><span class="text-slate-600">Lecturer &</span> Content creator</h2>
                 <p class="text-slate-600 font-semibold">Belajar web programming itu mudah dan menyenangkan bukan. <span
                         class="text-white">bukan!</span></p>
+                <div class="social-media text-2xl items-center flex gap-3 justify-center mt-2 text-emerald-400">
+                    <a href="https://www.instagram.com/rifqyfauzan._/"
+                        class="border-[2px] px-2 py-1 rounded-full border-emerald-400 hover:bg-emerald-400 hover:text-black transition duration-500 ease-in-out"><i
+                            class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://github.com/RifqyFauzan9"
+                        class="border-[2px] px-2 py-1 rounded-full border-emerald-400 hover:bg-emerald-400 hover:text-black transition duration-500 ease-in-out"><i
+                            class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/rifqy-fauzan-6264b6291/"
+                        class="border-[2px] px-2 py-1 rounded-full border-emerald-400 hover:bg-emerald-400 hover:text-black transition duration-500 ease-in-out"><i
+                            class='bx bxl-linkedin-square'></i></a>
+                    <a href="tel:+6289518853275"
+                        class="border-[2px] px-2 py-1 rounded-full border-emerald-400 hover:bg-emerald-400 hover:text-black transition duration-500 ease-in-out"><i
+                            class='bx bxl-whatsapp'></i></a>
+                </div>
                 <button type="button"
-                    class="rounded-full mt-5 bg-emerald-400 text-white py-2 px-5 font-semibold">Hubungi Saya</button>
-            </div>
-
-            <div class="home-img">
-                <img class="md:w-96 w-[17rem]" src="src/img/sandika ghalih.png" alt="me">
+                    class="rounded-full mt-2 bg-emerald-400 text-white py-2 px-5 font-semibold">Hubungi Saya</button>
             </div>
         </div>
     </section>
@@ -107,9 +124,10 @@
             <h1 class="text-emerald-500 font-bold text-2xl">Tentang Saya</h1>
         </div>
         <div class="about-content">
-            <div class="about-card mb-5 flex gap-3 flex-row md:flex-row justify-between items-center text-white">
+            <div data-aos="fade-right" data-aos-duration="1500" class="about-card mb-5 flex gap-3 flex-row md:flex-row justify-between items-center text-white">
                 <div class="about-card-text md:w-[50%] mb-5">
-                    <h1 class="nama font-black tracking-[.1rem] hover:tracking-[1.3rem] md:hover:tracking-[1.5rem] text-4xl md:text-6xl lg:text-8xl lg:hover:tracking-[2rem]">
+                    <h1
+                        class="nama font-black tracking-[.1rem] hover:tracking-[1.3rem] md:hover:tracking-[1.5rem] text-4xl md:text-6xl lg:text-8xl lg:hover:tracking-[2rem]">
                         Rifqy Fauzan</h1>
                 </div>
                 <div class="about-card-img">
@@ -117,9 +135,10 @@
                 </div>
             </div>
 
-            <div class="about-card gap-4 mt-16 flex flex-row-reverse justify-between items-center text-white">
+            <div data-aos="fade-left" data-aos-duration="1500" class="about-card gap-4 mt-16 flex flex-row-reverse justify-between items-center text-white">
                 <div class="about-card-text md:w-[50%] mb-5">
-                    <h1 class="nama tracking-[.1rem] md:tracking-[.5rem] relative hover:tracking-[1rem] hover:left-2 md:hover:left-0 md:hover:tracking-[.8rem] md:left-[-1rem] lg:hover:tracking-[1.3rem] font-black text-3xl md:text-6xl lg:text-7xl lg:left-[-3rem]">
+                    <h1
+                        class="nama tracking-[.1rem] md:tracking-[.5rem] relative hover:tracking-[1rem] hover:left-2 md:hover:left-0 md:hover:tracking-[.8rem] md:left-[-1rem] lg:hover:tracking-[1.3rem] font-black text-3xl md:text-6xl lg:text-7xl lg:left-[-3rem]">
                         Software Engineer</h1>
                 </div>
                 <div class="about-card-img">
@@ -142,7 +161,7 @@
             </div>
 
             <div class="portfolio-card flex flex-col md:flex-row flex-wrap gap-10 justify-center items-center">
-                <div class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
+                <div data-aos="fade-right" data-aos-duration="1500" class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
                     <div class="portfolio-card-img">
                         <img class="w-[25rem] rounded-t-lg" src="src/img/Company-Profile-NB.png" alt="">
                     </div>
@@ -153,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
+                <div data-aos="fade-left" data-aos-duration="1500" class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
                     <div class="portfolio-card-img">
                         <img class="w-[25rem] rounded-t-lg" src="src/img/-Portfolio.png" alt="">
                     </div>
@@ -164,7 +183,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
+                <div data-aos="fade-right" data-aos-duration="1500" class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
                     <div class="portfolio-card-img">
                         <img class="w-[25rem] rounded-t-lg" src="src/img/Al-Qur-an.png" alt="">
                     </div>
@@ -175,7 +194,7 @@
                     </div>
                 </div>
 
-                <div class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
+                <div data-aos="fade-left" data-aos-duration="1500" class="portfolio-card-content w-[80%] cursor-pointer md:w-[40%]">
                     <div class="portfolio-card-img">
                         <img class="w-[25rem] rounded-t-lg" src="src/img/Kopi-Kenangan.png" alt="">
                     </div>
@@ -201,7 +220,7 @@
                     molestiae, tempora repudiandae iste ad voluptate laboriosam quaerat officia quibusdam!</p>
             </div>
             <div class="blog-card flex flex-col flex-wrap md:flex-row justify-center gap-7 items-center">
-                <div class="blog-card-content cursor-pointer w-[80%] md:w-[38.1%] lg:w-[25%]">
+                <div data-aos="fade-right" data-aos-duration="1500" class="blog-card-content cursor-pointer w-[80%] md:w-[38.1%] lg:w-[25%]">
                     <div class="card-img">
                         <img class="rounded-t-lg"
                             src="src/img/Computer Programmer Job Description_ Templates for Hiring for Your Business.jpeg"
@@ -216,7 +235,7 @@
                     </div>
                 </div>
 
-                <div class="blog-card-content cursor-pointer w-[80%] md:w-[38.1%] lg:w-[25%]">
+                <div data-aos="fade-up" data-aos-duration="1500" class="blog-card-content cursor-pointer w-[80%] md:w-[38.1%] lg:w-[25%]">
                     <div class="card-img">
                         <img class="rounded-t-lg"
                             src="src/img/Computer Programmer Job Description_ Templates for Hiring for Your Business.jpeg"
@@ -232,7 +251,7 @@
                     </div>
                 </div>
 
-                <div class="blog-card-content cursor-pointer w-[80%] md:w-[80%] lg:w-[25%]">
+                <div data-aos="fade-left" data-aos-duration="1500" class="blog-card-content cursor-pointer w-[80%] md:w-[80%] lg:w-[25%]">
                     <div class="card-img">
                         <img class="rounded-t-lg"
                             src="src/img/Computer Programmer Job Description_ Templates for Hiring for Your Business.jpeg"
@@ -262,24 +281,24 @@
                     adipisicing elit. Qui, numquam!</p>
             </div>
             <div class="contact-content flex justify-center gap-5 items-center flex-col">
-                <div class="input">
+                <div class="input" data-aos="fade-down" data-aos-duration="1500">
                     <label for="inputNama" class="text-emerald-300 font-semibold block">Name</label>
                     <input type="text" name="name" id="inputNama" class="bg-slate-300 p-2 w-64 md:w-[40rem] rounded-lg">
                 </div>
 
-                <div class="input">
+                <div class="input" data-aos="fade-down" data-aos-duration="1500">
                     <label for="inputEmail" class="text-emerald-300 font-semibold block">Email</label>
                     <input type="text" name="email" id="inputEmail"
                         class="bg-slate-300 p-2 w-64 md:w-[40rem] rounded-lg">
                 </div>
 
-                <div class="input">
+                <div class="input" data-aos="fade-down" data-aos-duration="1500">
                     <label for="inputPesan" class="text-emerald-300 font-semibold block">Message</label>
                     <input type="text" name="message" id="inputPesan"
                         class="bg-slate-300 w-64 h-[10rem] md:w-[40rem] rounded-lg">
                 </div>
 
-                <div class="submit-button">
+                <div class="submit-button" data-aos="fade-down" data-aos-duration="1500">
                     <input type="submit" name="submit" id="submitButton"
                         class="font-semibold bg-emerald-400 md:w-[40rem] w-64 rounded-full p-2">
                 </div>
@@ -302,6 +321,13 @@
 
     <!-- js -->
     <script src="src/script.js"></script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- initialize aos -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
