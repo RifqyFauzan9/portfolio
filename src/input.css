@@ -13,3 +13,13 @@
 .active > span:nth-child(3) {
     @apply w-[10px] transition duration-500 ease-in-out;
 }
+
+.nama:hover {
+    color: transparent;
+    -webkit-text-stroke: .10rem #776B5D;
+    letter-spacing: 1rem;
+}
+
+.nama {
+    transition: .5s;
+  }
