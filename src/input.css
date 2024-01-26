@@ -14,6 +14,16 @@
     @apply w-[10px] transition duration-500 ease-in-out;
 }
 
+.nama-satu {
+    transition: .5s;
+}
+
+.nama-satu:hover {
+    color: transparent;
+    -webkit-text-stroke: .10rem #776B5D;
+    letter-spacing: .5rem;
+}
+
 .nama {
     transition: .5s;
 }

@@ -1095,6 +1095,16 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.nama-satu {
+  transition: .5s;
+}
+
+.nama-satu:hover {
+  color: transparent;
+  -webkit-text-stroke: .10rem #776B5D;
+  letter-spacing: .5rem;
+}
+
 .nama {
   transition: .5s;
 }
