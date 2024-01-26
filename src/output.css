@@ -744,6 +744,14 @@ video {
   width: 100%;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
 .origin-bottom-left {
   transform-origin: bottom left;
 }
@@ -818,6 +826,14 @@ video {
 
 .gap-7 {
   gap: 1.75rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .rounded-2xl {
@@ -1003,6 +1019,30 @@ video {
   font-weight: 600;
 }
 
+.tracking-\[\.3rem\] {
+  letter-spacing: .3rem;
+}
+
+.tracking-\[\.5rem\] {
+  letter-spacing: .5rem;
+}
+
+.tracking-\[\] {
+  letter-spacing: ;
+}
+
+.tracking-\[\.2rem\] {
+  letter-spacing: .2rem;
+}
+
+.tracking-\[\.1em\] {
+  letter-spacing: .1em;
+}
+
+.tracking-\[\.1rem\] {
+  letter-spacing: .1rem;
+}
+
 .text-emerald-200 {
   --tw-text-opacity: 1;
   color: rgb(167 243 208 / var(--tw-text-opacity));
@@ -1133,6 +1173,14 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:left-\[-10px\] {
+    left: -10px;
+  }
+
+  .md\:left-\[-1rem\] {
+    left: -1rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1213,8 +1261,21 @@ video {
     line-height: 1;
   }
 
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .md\:tracking-\[\.5rem\] {
+    letter-spacing: .5rem;
+  }
+
   .md\:hover\:left-\[-30px\]:hover {
     left: -30px;
+  }
+
+  .md\:hover\:left-0:hover {
+    left: 0px;
   }
 
   .md\:hover\:tracking-\[\.7rem\]:hover {
@@ -1224,11 +1285,71 @@ video {
   .md\:hover\:tracking-\[1\.5rem\]:hover {
     letter-spacing: 1.5rem;
   }
+
+  .md\:hover\:tracking-\[1rem\]:hover {
+    letter-spacing: 1rem;
+  }
+
+  .md\:hover\:tracking-\[\.8rem\]:hover {
+    letter-spacing: .8rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:static {
     position: static;
+  }
+
+  .lg\:left-\[-7rem\] {
+    left: -7rem;
+  }
+
+  .lg\:left-10 {
+    left: 2.5rem;
+  }
+
+  .lg\:left-\[20px\] {
+    left: 20px;
+  }
+
+  .lg\:left-\[200px\] {
+    left: 200px;
+  }
+
+  .lg\:left-\[-200px\] {
+    left: -200px;
+  }
+
+  .lg\:left-\[-2100px\] {
+    left: -2100px;
+  }
+
+  .lg\:left-\[-21100px\] {
+    left: -21100px;
+  }
+
+  .lg\:left-\[-100px\] {
+    left: -100px;
+  }
+
+  .lg\:left-\[-10rem\] {
+    left: -10rem;
+  }
+
+  .lg\:left-\[-6rem\] {
+    left: -6rem;
+  }
+
+  .lg\:left-\[-2rem\] {
+    left: -2rem;
+  }
+
+  .lg\:left-\[-2\.5rem\] {
+    left: -2.5rem;
+  }
+
+  .lg\:left-\[-3rem\] {
+    left: -3rem;
   }
 
   .lg\:block {
@@ -1273,17 +1394,35 @@ video {
     line-height: 1;
   }
 
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
   .lg\:shadow-none {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
-  .lg\:hover\:left-0:hover {
-    left: 0px;
+  .lg\:hover\:left-\[-7rem\]:hover {
+    left: -7rem;
+  }
+
+  .lg\:hover\:tracking-\[2rem\]:hover {
+    letter-spacing: 2rem;
   }
 
   .lg\:hover\:tracking-\[1\.3rem\]:hover {
     letter-spacing: 1.3rem;
+  }
+
+  .lg\:hover\:tracking-\[1\.5rem\]:hover {
+    letter-spacing: 1.5rem;
   }
 }
