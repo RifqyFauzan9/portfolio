@@ -568,6 +568,10 @@ video {
   left: 0.25rem;
 }
 
+.left-3 {
+  left: 0.75rem;
+}
+
 .right-1 {
   right: 0.25rem;
 }
@@ -816,6 +820,10 @@ video {
   gap: 1.75rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -826,11 +834,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-s-none {
-  border-start-start-radius: 0px;
-  border-end-start-radius: 0px;
 }
 
 .rounded-t-lg {
@@ -1092,30 +1095,26 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nama:hover {
-  color: transparent;
-  -webkit-text-stroke: .10rem #776B5D;
-  letter-spacing: 1rem;
-}
-
 .nama {
   transition: .5s;
+}
+
+.nama:hover {
+  color: transparent;
+  -webkit-text-stroke: .20rem #776B5D;
+  letter-spacing: .5rem;
+}
+
+.hover\:left-2:hover {
+  left: 0.5rem;
 }
 
 .hover\:tracking-\[1\.3rem\]:hover {
   letter-spacing: 1.3rem;
 }
 
-.hover\:tracking-\[1\.5rem\]:hover {
-  letter-spacing: 1.5rem;
-}
-
-.hover\:tracking-\[5rem\]:hover {
-  letter-spacing: 5rem;
-}
-
-.hover\:tracking-\[2rem\]:hover {
-  letter-spacing: 2rem;
+.hover\:tracking-\[1rem\]:hover {
+  letter-spacing: 1rem;
 }
 
 .group:hover .group-hover\:text-emerald-300 {
@@ -1203,6 +1202,18 @@ video {
     font-size: 4.5rem;
     line-height: 1;
   }
+
+  .md\:hover\:left-\[-30px\]:hover {
+    left: -30px;
+  }
+
+  .md\:hover\:tracking-\[\.7rem\]:hover {
+    letter-spacing: .7rem;
+  }
+
+  .md\:hover\:tracking-\[1\.5rem\]:hover {
+    letter-spacing: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1256,5 +1267,13 @@ video {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:hover\:left-0:hover {
+    left: 0px;
+  }
+
+  .lg\:hover\:tracking-\[1\.3rem\]:hover {
+    letter-spacing: 1.3rem;
   }
 }
