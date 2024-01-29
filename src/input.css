@@ -34,3 +34,14 @@
     letter-spacing: .5rem;
 }
 
+nav a {
+    transition: .5s ease;
+    border-bottom: 2px solid transparent;
+    border-radius: .3rem;
+}
+
+nav a:hover {
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    border-bottom: 2px solid lightgreen;
+}
