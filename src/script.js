@@ -1,6 +1,6 @@
 // tombol ke atas
 // navbar fixed
-window.onscroll = function () {
+window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
     const navbarFixed = header.offsetTop;
     const toTop = document.querySelector('#to-top');
@@ -11,7 +11,31 @@ window.onscroll = function () {
         header.classList.remove('navbar-fixed');
         toTop.classList.add('hidden');
     }
-};
+});
+
+// scrolll section active link
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
+
+window.addEventListener('scroll', () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if (top >= offset && top < offset + height) {
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+            });
+        };
+    });
+
+    // remove toggle and navbar when scroll
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+});
 
 const humberger = document.querySelector('#humberger');
 const navMenu = document.querySelector('#nav-menu');
