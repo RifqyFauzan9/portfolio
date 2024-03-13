@@ -45,3 +45,7 @@ nav a:hover {
     font-size: 1.1rem;
     border-bottom: 2px solid lightgreen;
 }
+
+.social-media a i {
+    @apply mt-1;
+}
