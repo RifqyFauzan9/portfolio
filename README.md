@@ -1,3 +1,3 @@
-# Rifqy's Portfolio
-## Demo
+# Rifqy's Portfolio | Android Developer
+## Overfiew
 ![preview img](/preview.png)
