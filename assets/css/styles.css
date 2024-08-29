@@ -258,11 +258,11 @@ img {
 /*=============== HOME ===============*/
 .home__container {
   row-gap: 2rem;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .home__img {
-  width: 220px;
+  width: 300px;
   justify-self: center;
   mask-image: linear-gradient(to bottom,
               hsla(var(--hue), 40%, 16%) 60%,
@@ -278,7 +278,7 @@ img {
 
 .home__profession {
   position: relative;
-  font-size: var(--big-font-size);
+  font-size: var(--h1-font-size);
   color: var(--text-color);
 }
 
@@ -344,7 +344,7 @@ img {
   background-color: var(--first-color);
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-  padding: 1.25rem 2rem;
+  padding: 1rem 2rem;
   transition: background-color .4s;
 }
 
