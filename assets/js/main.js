@@ -73,18 +73,18 @@ window.addEventListener('scroll', scrollUp);
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 
-const scrollActive = () =>{
+const scrollActive = () => {
     const scrollDown = window.scrollY
 
-    sections.forEach(current =>{
+    sections.forEach(current => {
         const sectionHeight = current.offsetHeight,
             sectionTop = current.offsetTop - 58,
             sectionId = current.getAttribute('id'),
             sectionsClass = document.querySelector('.nav__menu a[href*=' + sectionId + ']')
 
-        if(scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight){
+        if (scrollDown > sectionTop && scrollDown <= sectionTop + sectionHeight) {
             sectionsClass.classList.add('active-link')
-        }else{
+        } else {
             sectionsClass.classList.remove('active-link')
         }
     })
@@ -97,14 +97,14 @@ window.addEventListener('scroll', scrollActive)
 const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
-    duration: 2500,
-    delay: 400,
-    // reset: true // Animations Repeat
+    duration: 2000,
+    delay: 50,
+    reset: true // Animations Repeat
 })
 
 sr.reveal(`.home__data, .experience, .skills, .contact__container`);
-sr.reveal(`.home__img`, {delay: 600});
-sr.reveal(`.home__scroll`, {delay: 800});
-sr.reveal(`.work__card, .services__card`, {interval: 100});
-sr.reveal(`.about__content`, {origin: 'right'});
-sr.reveal(`.about__img`, {origin: 'left'});
+sr.reveal(`.home__img`, { delay: 600 });
+sr.reveal(`.home__scroll`, { delay: 800 });
+sr.reveal(`.work__card, .services__card`, { interval: 100 });
+sr.reveal(`.about__content`, { origin: 'right' });
+sr.reveal(`.about__img`, { origin: 'left' });

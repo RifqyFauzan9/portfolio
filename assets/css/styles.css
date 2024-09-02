@@ -93,7 +93,9 @@ textarea {
   outline: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -163,6 +165,11 @@ img {
 .nav__logo {
   color: var(--title-color);
   font-weight: var(--font-bold);
+  transition: color .4s;
+}
+
+.nav__logo:hover {
+  color: var(--title-color-light);
 }
 
 .nav__toggle,
@@ -209,7 +216,7 @@ img {
   position: absolute;
   left: 0;
   bottom: -.5rem;
-  transition: width .3s;
+  transition: width .4s;
 }
 
 .nav__link:hover {
@@ -252,7 +259,7 @@ img {
 }
 
 .active-link::after {
-  width: 30%;
+  width: 100%;
 }
 
 /*=============== HOME ===============*/
@@ -265,8 +272,8 @@ img {
   width: 300px;
   justify-self: center;
   mask-image: linear-gradient(to bottom,
-              hsla(var(--hue), 40%, 16%) 60%,
-              transparent 100%);
+      hsla(var(--hue), 40%, 16%) 60%,
+      transparent 100%);
 }
 
 .home__name {
@@ -286,10 +293,11 @@ img {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -.5rem;
-  width: 25%;
   height: 3px;
   background-color: var(--text-color);
+  bottom: -1rem;
+  width: 35%;
+  transition: width .4s ease;
 }
 
 .home__scroll {
@@ -435,12 +443,13 @@ img {
   width: 250px;
   justify-self: center;
   mask-image: linear-gradient(to bottom,
-              hsla(var(--hue), 40%, 16%) 60%,
-              transparent 100%);
+      hsla(var(--hue), 40%, 16%) 60%,
+      transparent 100%);
 }
 
 .about__button {
   width: 100%;
+  padding: .8rem 2rem;
 }
 
 /* EXPERIENCE */
@@ -492,6 +501,7 @@ img {
 
 .skills__box:hover {
   transform: translateY(-.25rem);
+  cursor: pointer;
 }
 
 /*=============== SERVICES ===============*/
@@ -656,6 +666,27 @@ img {
   bottom: 3rem;
 }
 
+.scroll_up i {
+  animation: scroll-up 3s infinite;
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(.8rem);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-.8rem);
+    opacity: 0;
+  }
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 300px) {
@@ -670,6 +701,7 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 540px) {
+
   .home__container,
   .work__container,
   .info__container,
@@ -680,7 +712,7 @@ img {
   }
 }
 
-@media  screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .nav__menu {
     width: 50%;
   }
@@ -770,11 +802,6 @@ img {
 
   .home__name {
     margin-bottom: 1.5rem;
-  }
-
-  .home__profession::after {
-    bottom: -1rem;
-    width: 35%;
   }
 
   .work__container {
