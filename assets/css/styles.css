@@ -27,6 +27,9 @@
   --text-color-light: hsl(var(--hue), 20%, 70%);
   --body-color: hsl(var(--hue), 40%, 16%);
   --container-color: hsl(var(--hue), 40%, 20%);
+  --dark-color: hsl(212, 40%, 12%);
+  --second-color: hsl(195, 75%, 52%);
+  --white-color: hsl(212, 4%, 95%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -477,6 +480,46 @@ img {
   margin-bottom: .75rem;
 }
 
+/* CERTIFICATE */
+.certificate__container {
+  row-gap: 2rem;
+}
+
+.certificate__link {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.certificate__img {
+  filter: grayscale(1);
+  transition: filter .5s, transform .5s;
+}
+
+.certificate__icon {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 2rem;
+  color: var(--first-color);
+  transition: transform .4s;
+}
+
+.certificate__link:hover .certificate__img {
+  transform: scale(1.1);
+  filter: none;
+}
+
+.certificate__link:hover .certificate__icon {
+  transform: translate(.5rem, -.5rem) rotate(-30deg);
+}
+
+.certificate__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: .25rem;
+}
+
 /* SKILLS */
 .skills__img {
   width: 35px;
@@ -689,7 +732,7 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 320px) {
   .container {
     margin-inline: 1rem;
   }
@@ -701,12 +744,16 @@ img {
 
 /* For medium devices */
 @media screen and (min-width: 540px) {
-
   .home__container,
   .work__container,
   .info__container,
   .services__container,
   .contact__container {
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
+
+  .certificate__container {
     grid-template-columns: 350px;
     justify-content: center;
   }
@@ -760,6 +807,10 @@ img {
 
   .services__container {
     grid-template-columns: repeat(2, 320px);
+  }
+
+  .certificate__container {
+    grid-template-columns: repeat(2, 350px);
   }
 }
 
@@ -924,5 +975,10 @@ img {
 
   .scroll_up {
     right: 3rem;
+  }
+
+  .certificate__container {
+    grid-template-columns: repeat(3, 350px);
+    row-gap: 4rem;
   }
 }
