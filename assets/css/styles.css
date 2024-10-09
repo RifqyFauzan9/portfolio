@@ -909,7 +909,7 @@ img {
   }
 
   .experience__company {
-    font-size: var(--h1-font-size);
+    font-size: 10;
   }
 
   .experience__profession {
