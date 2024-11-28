@@ -103,6 +103,7 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home__data, .experience, .skills, .contact__container`);
+sr.reveal(`.certificate, .section__title, .certificate__card`);
 sr.reveal(`.home__img`, { delay: 600 });
 sr.reveal(`.home__scroll`, { delay: 800 });
 sr.reveal(`.work__card, .services__card`, { interval: 100 });
