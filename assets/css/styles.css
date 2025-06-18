@@ -266,9 +266,18 @@ img {
 }
 
 /*=============== HOME ===============*/
+.home.section {
+  min-height: 100vh; /* 100% tinggi layar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .home__container {
   row-gap: 2rem;
   padding-top: 2rem;
+  text-align: center;
 }
 
 .home__img {
@@ -298,7 +307,7 @@ img {
   left: 0;
   height: 3px;
   background-color: var(--text-color);
-  bottom: -1rem;
+  bottom: -1.5rem;
   width: 35%;
   transition: width .4s ease;
 }
@@ -371,7 +380,7 @@ img {
 .work__card {
   background-color: var(--first-color);
 }
-
+ 
 .work__link {
   display: block;
   position: relative;
