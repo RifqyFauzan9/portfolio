@@ -147,6 +147,7 @@ img {
   overflow: hidden;
 }
 
+
 /*=============== HEADER & NAV ===============*/
 .header {
   position: fixed;
@@ -262,7 +263,7 @@ img {
 }
 
 .active-link::after {
-  width: 100%;
+  width: 50%;
 }
 
 /*=============== HOME ===============*/
