@@ -263,7 +263,7 @@ img {
 }
 
 .active-link::after {
-  width: 50%;
+  width: 30%;
 }
 
 /*=============== HOME ===============*/
